@@ -1,7 +1,7 @@
 import requests
 import json
 
-API_KEY = "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"
+API_KEY = "YOUR_API_KEYS"
 
 url = "https://openrouter.ai/api/v1/chat/completions"
 
@@ -28,4 +28,5 @@ while True:
         reply = r.json()["choices"][0]["message"]["content"]
         print("AI:", reply)
     else:
+
         print("Error:", r.text)
