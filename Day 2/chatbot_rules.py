@@ -1,7 +1,7 @@
 #import
 from openai import OpenAI
 #openai router url and api links
-client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key="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")
+client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key="YOUR_API_KEYS")
 #getting an input from user
 user_input=input("ask a qustions:")
 #role base ai logic
@@ -18,4 +18,5 @@ response=client.chat.completions.create(
     max_tokens=150
 )
 print(response.choices[0].message.content)
+
 
